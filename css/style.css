@@ -126,12 +126,32 @@ body{
 .video-container .vid1{
     display: block;
 }
+ .controls{
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.controls .dots{
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    background: #fff200;
+    margin: 0 1rem;
+}
+.controls .dots:hover{
+    background:#fff ;
+}
 .fa-times{
     transform: skew(-180deg) rotate(-180deg);
 }
 
 /*media queries*/
 @media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
     #header .fa-hamburger{
         display: block;
         z-index: 1;
