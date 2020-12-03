@@ -55,8 +55,59 @@ body{
 }
 #home{
     background: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.6));
-    min-height: 100vh
+    min-height: 100vh;
+    position: relative;
 }
+.content h1{
+    font-size: 5rem;
+    font-family: 'Lemonada', cursive;
+    font-weight: bolder;
+    text-shadow: .1rem .1rem #333;
+    color: #fff200;
+}
+.content h2{
+    font-size: 3.5rem;
+    font-family: 'Lemonada', cursive;
+    font-weight: bolder;
+    text-shadow: .1rem .1rem #333;
+    color: #fff;
+    margin: 1rem 0;
+}
+.content p{
+    font-size: 1.6rem ;
+    color:#ccc;
+}
+.content button{
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 4rem;
+    width:14rem;
+    background-color: #fff;
+}
+.content button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff200;
+    height: 100%;
+    width: 0%;
+    transition: -2s;
+    z-index: -1;
+}
+.content button:hover::before{
+    width: 100%;
+}
+
 .fa-times{
     transform: skew(-180deg) rotate(-180deg);
 }
