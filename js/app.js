@@ -27,4 +27,11 @@ $(document).ready(function(){
         $('.vid1').css('display','none');
 
     });
+    $(window).on('scroll load',function(){
+        if($(window).scrollTop() >20){
+            $('#header').addClass('header-active');
+        }else{
+            $('#header').removeClass('header-active');
+        }
+    })
 });

@@ -230,6 +230,14 @@ body{
 .card:hover{
     transform: scale(.9);
 }
+.header-active{
+    background-color: #333;
+    height: 6rem;
+    box-shadow: 2rem 0 .5rem #000;
+  }
+  .header-active nav ul{
+    margin: 0;
+  }
 
     /*media queries*/
 @media (max-width:768px){
